@@ -1,0 +1,26 @@
+.entry {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: brown 2px dotted;
+}
+
+.entry-title-container,
+.entry-date-container,
+.entry-body-container,
+.entry-subject-container,
+.entry-mood-container {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+}
+
+.entry-body {
+    max-width: max-content;
+}
+
+.entry-save {
+  width: max-content;
+  margin: 0.5rem;
+}
