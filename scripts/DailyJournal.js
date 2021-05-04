@@ -1,24 +1,17 @@
 import { Entries } from "./Entries.js";
-
-export const DailyJournal = () => {
-  return `
-        <div class="entryList">
-            ${Entries()}
-        </div>
-    `;
-};
+import { inputForm } from "./JournalForm.js";
 
 export const DailyJournal = () => {
   return `
         <h1>Daily Journal</h1>
         <h2>Gabe Gonzales</h2>
 
+        <article class="entryForm">
+            ${inputForm()}
+        </article>
+
         <div class="entryList">
             ${Entries()}
         </div>
-
-        <article class="entryForm">
-            Use interpolation to put the HTML that the form function generates here
-        </article>
     `;
 };
