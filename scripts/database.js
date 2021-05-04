@@ -28,11 +28,6 @@ const database = {
   newEntryObject: {},
 };
 
-/*
-    You export a function that provides a version of the
-    raw data in the format that you want
-*/
-
 export const getJournalEntries = () => {
   const copyOfData = [...database.entries];
   return copyOfData;

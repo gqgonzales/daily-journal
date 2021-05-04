@@ -11,7 +11,7 @@ export const inputForm = () => {
     <div class="entry-date-container">
       <form class="entryForm">
         <fieldset>
-          <label for="entry-date">${entry.date}</label>
+          <label for="entry-date">Date</label>
           <input type="date" name="entryDate" class="entryForm__date" />
         </fieldset>
       </form>
@@ -21,17 +21,17 @@ export const inputForm = () => {
       <label for="entry-subject">What subjects did you tackle?</label>
       <div class="entry-subject">
         <input
-          type="testing testing testing"
-          placeholder="${entry.concept}"
+          type="text-field"
+          placeholder="Subject here"
         />
       </div>
     </div>
     <!-- BODY -->
     <div class="entry-body-container">
-      <label for="entry-body">The actual entry:</label>
+      <label for="entry-body">Entry Body</label>
       <div class="entry-body-sub-container">
     <div class = "entry-body"> 
-        ${entry.entry}
+        <textarea name="Journal Entry" class="entry-body" cols="50" rows="5" placeholder="Write your thoughts here"></textarea>
     </div>
       </div>
     </div>
@@ -39,7 +39,12 @@ export const inputForm = () => {
     <div class="entry-mood-container">
       <label for="entry-mood">¿Cómo te sientes?</label>
       <div class="entry-mood-sub-container">
-        <div class = "entry-mood">${entry.mood}</div>
+      <select name="mood" class="entry-mood">
+      <option value="accomplished">Accomplished</option>
+      <option value="frustrated">Frustrated</option>
+      <option value="content">Content</option>
+      <option value="humbled">Humbled</option>
+    </select>
       </div>
     </div>
     <button class="entry-save" type="submit">Save</button>

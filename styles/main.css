@@ -17,10 +17,21 @@
 }
 
 .entry-body {
-    max-width: max-content;
+  max-width: max-content;
 }
 
 .entry-save {
   width: max-content;
   margin: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #e8ad09;
+  text-align: center;
+}
+
+body {
+  background-color: blanchedalmond;
+  font-family: "Josefin Sans", sans-serif;
 }
