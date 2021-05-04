@@ -9,14 +9,16 @@ export const DailyJournal = () => {
 };
 
 export const DailyJournal = () => {
-    return `
+  return `
         <h1>Daily Journal</h1>
+        <h2>Gabe Gonzales</h2>
 
         <div class="entryList">
-            ${ Entries() }
+            ${Entries()}
         </div>
 
         <article class="entryForm">
             Use interpolation to put the HTML that the form function generates here
         </article>
-    `
+    `;
+};
