@@ -1,6 +1,11 @@
-// Hello world
+import { getJournalEntries } from "./database.js";
+
 export const inputForm = () => {
-  return `
+  const entries = getJournalEntries();
+  let inputFormAsHTML = "";
+
+  for (const entry of entries) {
+    inputFormAsHTML += `
     <section class="entry">
     <!-- DATE -->
     <div class="entry-date-container">
@@ -40,4 +45,6 @@ export const inputForm = () => {
     <button class="entry-save" type="submit">Save</button>
   </section>
   `;
+    return inputFormAsHTML;
+  }
 };

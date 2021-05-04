@@ -1,12 +1,3 @@
-/*
-Data provider for Daily Journal application
-
-Holds the raw data about each entry and exports
-functions that other modules can use to filter
-the entries for different purposes.
-
- */
-
 const database = {
   entries: [
     {
@@ -34,6 +25,7 @@ const database = {
       mood: "Frustrated",
     },
   ],
+  newEntryObject: {},
 };
 
 /*
